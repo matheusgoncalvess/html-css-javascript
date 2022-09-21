@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.container img{
+    width: 1087px;
+    height: 723px;
+    border-radius: 30px;
+}
+
+.painel.active {
+    flex: 5;
+}
+
+.painel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 10px;
+    
+    cursor: pointer;
+    flex: 0.5;
+    transition: flex 0.7s ease-in;
+    -webkit-transition: all 700ms ease-in;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+.painel:nth-of-type(4),
+  .painel:nth-of-type(5) {
+    display: none;
+  }
+}

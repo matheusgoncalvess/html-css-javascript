@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Cards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <div class="container">
+                <div class="painel"> 
+                    <img src="images/elefante.jpg" alt="Imagem de um Elefante">
+                </div>
+            
+            <div class="painel">
+                <img  src="images/cachorro-cocker.jpg" alt="Imagem de um Cachorro da Raça Cocker">
+            </div>
+            
+            <div class="painel">
+                <img  src="images/pembroke-welsh.jpg" alt="Imagem de um Cachorro Pembore Welsh">
+            </div>
+            
+            <div class="painel">
+                <img src="images/husky-siberiano.jpg" alt="Imagem de um Husky Siberiano">
+            </div>
+            
+            <div class="painel">
+                <img src="images/leao.jpg" alt="Imagem de um Leão">
+            </div>
+
+         </div>
+    <script src="script.js">
+        const panels = document.querySelectorAll(".painel");
+
+            panels.forEach((painel) => {
+            painel.addEventListener("click", () => {
+                removeActiveClasses();
+                painel.classList.add("active");
+            });
+            });
+
+            const removeActiveClasses = () => {
+                 panels.forEach((painel) => {
+                     painel.classList.remove("active");
+                });
+                };
+
+    </script>
+</body>
+</html>
