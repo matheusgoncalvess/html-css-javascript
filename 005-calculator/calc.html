@@ -16,7 +16,7 @@
     <div id="container">
         <div class="calculator">
             <h2>Resultado</h2>
-            
+        <div class="keys"> 
             <table>
                 <tr>
                     <td>
@@ -56,12 +56,13 @@
                 <tr>
                     <td>
                         <button>0</button>
-                        <button>.</button>
-                        <button>AC</button>
-                        <button id="igual">=</button>
+                        <button data-action="decimal">.</button>
+                        <button data-action="clear">AC</button>
+                        <button class="key--equal" data-action="calculate" id="igual">=</button>
                     </td>
                 </tr>
             </table>
+        </div>
         </div>
     </div>
 
